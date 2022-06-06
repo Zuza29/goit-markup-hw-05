@@ -408,7 +408,6 @@ img {
 
 .footer > .container {
   display: flex;
-  margin: 0;
   align-items: start;
 }
 
