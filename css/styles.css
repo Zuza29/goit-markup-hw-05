@@ -148,7 +148,6 @@ img {
   fill: var(--blue);
 }
 
-
 .header-icon-1 {
   height: 12px;
   width: 16px;
@@ -176,6 +175,9 @@ img {
     url(../images/bgimg.jpg);
   background-size: cover;
   background-position: center;
+  max-width: 1600px;
+  max-height: 600px;
+  margin: auto;
 }
 
 .main-page-top {
@@ -379,6 +381,7 @@ img {
 .rectangle-2:hover svg {
   fill: var(--blue);
   border-color: var(--blue);
+  cursor: pointer;
 }
 
 .rectangle-2 {
@@ -407,7 +410,6 @@ img {
   display: flex;
   margin: 0;
   align-items: start;
-  margin-left: 215px;
 }
 
 .footer {
