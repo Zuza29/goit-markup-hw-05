@@ -562,3 +562,49 @@ justify-content: space-between;
 .portfolio p {
   padding: 4px 24px 20px 24px;
 }
+
+/* Modal */
+
+.is-hidden {
+  opacity: 0;
+  visibility: none;
+  pointer-events: none;
+}
+
+.close-btn {
+  position: absolute;
+  background-color: #fff;
+  
+  cursor: pointer;
+  top: 8px;
+  right: 8px;
+  border: 1px solid rgba(0, 0, 0, .1);
+  border-radius: 50%;
+}
+
+.close-btn,
+.x {
+    width: 30px;
+  height: 30px;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  width: 528px;
+height: 581px;
+box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+}
+
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .1);
+}

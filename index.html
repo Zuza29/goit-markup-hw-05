@@ -44,7 +44,7 @@
       <section class="section section-1">
       <div class="main-page-top container">
         <h1>Efektywne rozwiązania dla waszego biznesu</h1>
-        <button type="button">Zamów usługę</button>
+        <button type="button" data-modal-open>Zamów usługę</button>
       </div>
       </section>
       <section class="section main-page-mid-1-list">
@@ -388,5 +388,17 @@
   </address>
     </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close-btn" data-modal-close>
+<svg class="x"><use href="images/icons.svg#x"></use></svg>
+        </button>
+      </div>
+    </div>
+
+    <script src="js/modal.js"></script>
+
+
   </body>
 </html>
