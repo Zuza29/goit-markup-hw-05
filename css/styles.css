@@ -545,13 +545,14 @@ img {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-
+  
 }
 
 .portfolio figure {
   background: #fff;
   border: 1px solid #eee;
   margin-bottom: 30px;
+
 }
 
 .portfolio figure:hover {
@@ -579,11 +580,12 @@ img {
   position: relative;
   width: 370px;
   height: 294px;
-  overflow: hidden;
+overflow: hidden;
 }
 
 .overlay-container:hover .overlay {
   transform: translatey(0);
+
 }
 
 .overlay {
@@ -596,6 +598,7 @@ img {
   opacity: 90%;
   transform: translatey(100%);
   transition: transform 250ms ease;
+
 }
 
 /* Modal */
