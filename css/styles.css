@@ -119,6 +119,12 @@ img {
   color: var(--blue);
 }
 
+.active:focus::after {
+  content: "";
+  display: block;
+  border-bottom: 5px solid red;
+}
+
 .menu-2 {
   margin-left: auto;
   margin-right: 12px;
@@ -538,54 +544,49 @@ img {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding-top: 20px;
+  padding-right: 24px;
+  padding-left: 24px;
 }
 
-.portfolio figcaption {
+.portfolio-item-text {
   color: var(--text-grey);
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
-  
+  z-index: 1002;
+  position: relative;
+  background-color: #fff;
 }
 
-.portfolio figure {
-  background: #fff;
+.portfolio-item {
+  background-color: #fff;
   border: 1px solid #eee;
   margin-bottom: 30px;
-
+  position: relative;
+  max-width: 370px;
+  max-height: 404px;
+  overflow: hidden;
+  z-index: 1001;
 }
 
-.portfolio figure:hover {
+.portfolio-item:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.portfolio ul {
+.portfolio-main-list {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.portfolio h3 {
-  padding-top: 20px;
-  padding-right: 24px;
-  padding-left: 24px;
 }
 
 .portfolio p {
   padding: 4px 24px 20px 24px;
 }
 
-.overlay-container {
-  position: relative;
-  width: 370px;
-  height: 294px;
-overflow: hidden;
-}
-
-.overlay-container:hover .overlay {
+.portfolio-item:hover .overlay {
   transform: translatey(0);
-
 }
 
 .overlay {
@@ -598,7 +599,14 @@ overflow: hidden;
   opacity: 90%;
   transform: translatey(100%);
   transition: transform 250ms ease;
+}
 
+.overlay p {
+font-size: 18px;
+line-height: 1.55;
+letter-spacing: 0.03em;
+color: #FFFFFF;
+padding-top: 49px;
 }
 
 /* Modal */
@@ -612,7 +620,6 @@ overflow: hidden;
 .close-btn {
   position: absolute;
   background-color: #fff;
-
   cursor: pointer;
   top: 8px;
   right: 8px;
@@ -635,7 +642,7 @@ overflow: hidden;
   width: 528px;
   height: 581px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   transition: 0.8s all ease;
 }
