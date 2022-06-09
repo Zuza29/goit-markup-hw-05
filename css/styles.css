@@ -120,10 +120,12 @@ img {
 }
 
 .active::after {
-  content: "";
-  display: block;
-  border-top: 5px solid red;
-
+    content: "";
+    display: block;
+    position: relative;
+    border-top: 4px solid var(--blue);
+    border-radius: 2px;
+    top: 29px;
 }
 
 .menu-2 {
