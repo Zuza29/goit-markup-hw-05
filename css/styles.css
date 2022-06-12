@@ -119,13 +119,21 @@ img {
   color: var(--blue);
 }
 
-.active::after {
-    content: "";
-    display: block;
+.active {
     position: relative;
+  top: 0;
+  left: 0;
+}
+
+.active::after {
+content: "";
+    display: block;
+    position: absolute;
     border-top: 4px solid var(--blue);
     border-radius: 2px;
-    top: 30px;
+    width: 100%;
+    bottom: -33px;
+    left: 0;
 }
 
 .menu-2 {
